@@ -4,8 +4,9 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/darlington-digital-solutions/",
-    server: {
+  // Use relative paths for GitHub Pages project sites
+  base: "./",
+  server: {
     host: "::",
     port: 8080,
   },
