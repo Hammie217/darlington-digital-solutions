@@ -2,8 +2,9 @@ name: Deploy Vite site to GitHub Pages
 
 on:
   push:
-    branches: [ "main" ]  # Deploy on pushes to main
-  workflow_dispatch:      # Allow manual run
+    branches:
+      - main       # Deploy when main branch is updated
+  workflow_dispatch: # Allows manual trigger
 
 permissions:
   contents: read
@@ -23,7 +24,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -33,9 +34,9 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: npm run build   # must output to dist/
+        run: npm run build
 
-      - name: Upload build output
+      - name: Upload build artifacts
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
@@ -47,7 +48,6 @@ jobs:
 
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Deploy to GitHub Pages
