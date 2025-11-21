@@ -46,10 +46,12 @@ const Index = () => {
               Expert consulting, seamless project delivery, and reliable ongoing support for your digital systems.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#contact">
               <Button size="lg" className="text-lg shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-hover)] transition-all">
                 Start Your Journey
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
+              </a>
               <a href="#services">
                 <Button size="lg" variant="outline" className="text-lg" >
                   Learn More
@@ -227,10 +229,12 @@ const Index = () => {
               <p className="text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
                 Let's discuss how Darlington Digital Services can help you achieve your digital goals.
               </p>
-              <Button size="lg" variant="secondary" className="text-lg shadow-lg hover:shadow-xl transition-all">
-                <Mail className="mr-2 h-5 w-5" />
-                Get In Touch
-              </Button>
+              <a href="mailto:hello@darlingtondigital.co.uk">
+                <Button size="lg" variant="secondary" className="text-lg shadow-lg hover:shadow-xl transition-all">
+                  <Mail className="mr-2 h-5 w-5" />
+                    Get In Touch
+                </Button>
+              </a>
             </div>
           </div>
         </div>
