@@ -50,9 +50,11 @@ const Index = () => {
                 Start Your Journey
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button size="lg" variant="outline" className="text-lg">
-                Learn More
-              </Button>
+              <a href="#services">
+                <Button size="lg" variant="outline" className="text-lg" >
+                  Learn More
+                </Button>
+              </a>
             </div>
           </div>
         </div>
