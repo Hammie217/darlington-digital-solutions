@@ -20,6 +20,7 @@ const Index = () => {
           <nav className="hidden md:flex gap-6">
             <a href="#services" className="text-foreground hover:text-primary transition-colors">Services</a>
             <a href="#why-us" className="text-foreground hover:text-primary transition-colors">Why Us</a>
+            <a href="#case-studies" className="text-foreground hover:text-primary transition-colors">Case Studies</a>
             <a href="#contact" className="text-foreground hover:text-primary transition-colors">Contact</a>
           </nav>
           <Button variant="default" size="sm" className="hidden md:flex">
@@ -218,8 +219,124 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Case Studies Section */}
+      <section id="case-studies" className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h3 className="text-3xl md:text-5xl font-bold text-foreground mb-4">Success Stories</h3>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Real results from digital transformation projects we've delivered
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {/* Case Study 1 */}
+            <Card className="border-border hover:shadow-[var(--shadow-hover)] transition-all duration-300 group">
+              <CardContent className="p-0">
+                <div className="h-48 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
+                  <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center backdrop-blur-sm">
+                    <Settings className="h-10 w-10 text-primary" />
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium mb-4">
+                    Manufacturing
+                  </div>
+                  <h4 className="text-xl font-bold text-foreground mb-3">Legacy System Modernization</h4>
+                  <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
+                    Transformed a 20-year-old manufacturing system into a modern cloud-based platform, improving operational efficiency by 45%.
+                  </p>
+                  <div className="border-t border-border pt-4 space-y-2">
+                    <div className="flex items-center gap-2 text-sm">
+                      <CheckCircle2 className="h-4 w-4 text-accent" />
+                      <span className="text-foreground">6-month delivery</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm">
+                      <CheckCircle2 className="h-4 w-4 text-accent" />
+                      <span className="text-foreground">45% efficiency gain</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm">
+                      <CheckCircle2 className="h-4 w-4 text-accent" />
+                      <span className="text-foreground">Zero downtime migration</span>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Case Study 2 */}
+            <Card className="border-border hover:shadow-[var(--shadow-hover)] transition-all duration-300 group">
+              <CardContent className="p-0">
+                <div className="h-48 bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center">
+                  <div className="w-20 h-20 rounded-full bg-accent/10 flex items-center justify-center backdrop-blur-sm">
+                    <Rocket className="h-10 w-10 text-accent" />
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="inline-block px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-medium mb-4">
+                    Healthcare
+                  </div>
+                  <h4 className="text-xl font-bold text-foreground mb-3">Digital Patient Portal</h4>
+                  <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
+                    Built a comprehensive patient management system serving 50,000+ users with seamless appointment booking and medical records access.
+                  </p>
+                  <div className="border-t border-border pt-4 space-y-2">
+                    <div className="flex items-center gap-2 text-sm">
+                      <CheckCircle2 className="h-4 w-4 text-accent" />
+                      <span className="text-foreground">50K+ active users</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm">
+                      <CheckCircle2 className="h-4 w-4 text-accent" />
+                      <span className="text-foreground">98% user satisfaction</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm">
+                      <CheckCircle2 className="h-4 w-4 text-accent" />
+                      <span className="text-foreground">HIPAA compliant</span>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Case Study 3 */}
+            <Card className="border-border hover:shadow-[var(--shadow-hover)] transition-all duration-300 group">
+              <CardContent className="p-0">
+                <div className="h-48 bg-gradient-to-br from-primary/20 via-accent/20 to-primary/20 flex items-center justify-center">
+                  <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center backdrop-blur-sm">
+                    <HeadphonesIcon className="h-10 w-10 text-primary" />
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium mb-4">
+                    Retail
+                  </div>
+                  <h4 className="text-xl font-bold text-foreground mb-3">E-commerce Platform Integration</h4>
+                  <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
+                    Integrated multiple sales channels into a unified system, increasing revenue by 60% and reducing order processing time by 70%.
+                  </p>
+                  <div className="border-t border-border pt-4 space-y-2">
+                    <div className="flex items-center gap-2 text-sm">
+                      <CheckCircle2 className="h-4 w-4 text-accent" />
+                      <span className="text-foreground">60% revenue increase</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm">
+                      <CheckCircle2 className="h-4 w-4 text-accent" />
+                      <span className="text-foreground">70% faster processing</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm">
+                      <CheckCircle2 className="h-4 w-4 text-accent" />
+                      <span className="text-foreground">Multi-channel sync</span>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
-      <section id="contact" className="py-20 bg-muted/30">
+      <section id="contact" className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="rounded-2xl bg-gradient-to-br from-primary to-accent p-12 md:p-16 shadow-[var(--shadow-soft)]">
@@ -256,6 +373,7 @@ const Index = () => {
             <div className="flex gap-6 text-sm text-muted-foreground">
               <a href="#services" className="hover:text-primary transition-colors">Services</a>
               <a href="#why-us" className="hover:text-primary transition-colors">Why Us</a>
+              <a href="#case-studies" className="hover:text-primary transition-colors">Case Studies</a>
               <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
             </div>
             <p className="text-sm text-muted-foreground">
