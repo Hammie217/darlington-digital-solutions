@@ -22,7 +22,7 @@ const Index = () => {
           <nav className="hidden md:flex gap-6">
             <a href="#services" className="text-foreground hover:text-primary transition-colors">Services</a>
             <a href="#why-us" className="text-foreground hover:text-primary transition-colors">Why Us</a>
-            <a href="#case-studies" className="text-foreground hover:text-primary transition-colors">Case Studies</a>
+            {/*<a href="#case-studies" className="text-foreground hover:text-primary transition-colors">Case Studies</a>*/}
             <a href="#contact" className="text-foreground hover:text-primary transition-colors">Contact</a>
           </nav>
           <Button variant="default" size="sm" className="hidden md:flex">
@@ -221,7 +221,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Case Studies Section */}
+      {/* Case Studies Section 
       <section id="case-studies" className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -232,7 +232,6 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            {/* Case Study 1 */}
             <Card className="border-border hover:shadow-[var(--shadow-hover)] transition-all duration-300 group">
               <CardContent className="p-0">
                 <div className="h-48 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
@@ -266,7 +265,6 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            {/* Case Study 2 */}
             <Card className="border-border hover:shadow-[var(--shadow-hover)] transition-all duration-300 group">
               <CardContent className="p-0">
                 <div className="h-48 bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center">
@@ -300,7 +298,6 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            {/* Case Study 3 */}
             <Card className="border-border hover:shadow-[var(--shadow-hover)] transition-all duration-300 group">
               <CardContent className="p-0">
                 <div className="h-48 bg-gradient-to-br from-primary/20 via-accent/20 to-primary/20 flex items-center justify-center">
@@ -336,7 +333,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-
+*/}
       {/* CTA Section */}
       <section id="contact" className="py-20 bg-background">
         <div className="container mx-auto px-4">
