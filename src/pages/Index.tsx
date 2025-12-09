@@ -9,8 +9,8 @@ const Index = () => {
       <header className="border-b border-border sticky top-0 bg-background/80 backdrop-blur-md z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">D</span>
+            <div className="w-10 h-10 flex items-center justify-center">
+              <img src="../public/logo.png"/>
             </div>
             <div>
               <h1 className="text-xl font-bold text-foreground">Darlington Digital Services</h1>
@@ -137,15 +137,15 @@ const Index = () => {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-foreground">24/7 system monitoring</span>
+                    <span className="text-sm text-foreground">Ongoing maintenance</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-foreground">Regular updates & maintenance</span>
+                    <span className="text-sm text-foreground">System updates</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-foreground">Technical helpdesk</span>
+                    <span className="text-sm text-foreground">Technical expansion </span>
                   </li>
                 </ul>
               </CardContent>
@@ -245,8 +245,8 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">D</span>
+              <div className="w-8 h-8 flex items-center justify-center">
+              <img src="../public/logo.png"/>
               </div>
               <div>
                 <p className="font-bold text-foreground">Darlington Digital Services</p>
