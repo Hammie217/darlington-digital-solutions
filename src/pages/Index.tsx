@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Settings, Rocket, HeadphonesIcon, ArrowRight, CheckCircle2, Mail } from "lucide-react";
+import logo from "../../public/logo.png";
+
 
 const Index = () => {
   return (
@@ -10,7 +12,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="w-10 h-10 flex items-center justify-center">
-              <img src="../public/logo.png"/>
+              <img src={logo}/>
             </div>
             <div>
               <h1 className="text-xl font-bold text-foreground">Darlington Digital Services</h1>
@@ -363,7 +365,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 flex items-center justify-center">
-              <img src="../public/logo.png"/>
+              <img src={logo}/>
               </div>
               <div>
                 <p className="font-bold text-foreground">Darlington Digital Services</p>
